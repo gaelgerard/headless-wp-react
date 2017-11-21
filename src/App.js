@@ -9,7 +9,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    let dataURL = "http://headless-wp.dev/wp-json/wp/v2/movies?_embed";
+    let dataURL = "http://dev.gaelgerard.com/wp-json/wp/v2/movies?_embed";
     fetch(dataURL)
       .then(res => res.json())
       .then(res => {
